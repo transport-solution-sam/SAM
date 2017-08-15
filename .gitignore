@@ -1,0 +1,14 @@
+#webstorm
+.idea
+
+# node modules
+node_modules
+
+config.json
+logs
+
+util/log4js_configuration.json
+
+dbAuthentification
+dbAuthentification/schema.sql
+dbAuthentification/db.js
