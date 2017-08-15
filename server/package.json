@@ -1,0 +1,47 @@
+{
+  "name": "sam_server",
+  "description": "SAM Streckenabhängige Fahranalyse",
+  "version": "0.9.0",
+  "private": true,
+  "author": {
+    "name": "Rico Fritzsche",
+    "name": "Christoph Prinz",
+    "name": "Simon Sander"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "bcrypt-nodejs": "*",
+    "body-parser": "*",
+    "bookshelf": "0.7.9",
+    "bootstrap": "3.3.*",
+    "cookie-parser": "*",
+    "express": "4.0",
+    "express-http-proxy": "^0.6.0",
+    "express-session": "*",
+    "extend": "^2.0.0",
+    "gps-distance": "0.0.3",
+    "json-2-csv": "1.3.0",
+    "knex": "0.7.5",
+    "log4js": "0.6.21",
+    "mocha": "2.1.*",
+    "moment": "2.9.*",
+    "mysql": "*",
+    "node-cache": "^1.1.0",
+    "node-geocoder": "^2.11.1",
+    "passport": "*",
+    "passport-local": "*",
+    "plotter": "0.5.0",
+    "prfun": "2.1.3",
+    "request": "^2.55.0",
+    "requestify": "0.1.17",
+    "sendmail": "0.2.1",
+    "seraph": "0.11.1",
+    "simple-statistics": "^0.9.1",
+    "winston": "^0.8.3",
+    "xmlbuilder": "^2.6.2"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "license": "GPL-3.0"
+}

@@ -1,0 +1,11 @@
+Server Release 0.10 
+***************
+
++ enable login with '/signin/', '/signup/', '/signout/'
++ correct logging
++ failure response
++ connection to neo4j database
++ test response for GET method at '/get/'
++ safe JSON files with '/v01/downloads.json'
++ show test data originally in files in browser
++ protect test data files with password authentication at /downloads/

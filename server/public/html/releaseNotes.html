@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../img/favicon2.ico">
+
+    <title>SAM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/dropdown.js"></script>
+    <script type="text/javascript" src="../js/collapse.js"></script>
+
+    <script type="text/javascript">
+            var xmlHttp = new XMLHttpRequest();
+            var list;
+            var inputS = new Array;
+
+            if (xmlHttp) {
+                xmlHttp.open('GET', '/v01/sreleases.json', true);
+                xmlHttp.onreadystatechange = function () {
+                    if (xmlHttp.readyState == 4) {
+                        list = JSON.parse(xmlHttp.responseText);
+
+                        for(var i = 0; i<=list.length-1; i++){
+                            var path = "/releases/server/";
+                            inputS[i] = "<a href=\"" +path+list[i]+ "\">" +list[i]+ "</a><br />";
+                        }
+                        $("#viewServerRelease").html(inputS);
+                    }
+                };
+                xmlHttp.send(null);
+            }
+    </script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">SAM</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">SAM</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/downloads/">Testdaten</a></li>
+                    <li class="active"><a href="/release_notes/">Release Notes</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+    </nav>
+
+    <div class="release_uber"><h1>Release Notes für die Komponenten</h1></div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="überschriftEins">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEins" aria-expanded="false" aria-controls="collapse1">
+                        Server Release Notes
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseEins" class="panel-collapse collapse" role="tabpanel" aria-labelledby="überschriftEins">
+                <div class="panel-body">
+                    <div id="viewServerRelease"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="überschriftZwei">
+                  <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseZwei" aria-expanded="false" aria-controls="collapse2">
+                      App Release Notes
+                      </a>
+                  </h4>
+              </div>
+              <div id="collapseZwei" class="panel-collapse collapse" role="tabpanel" aria-labelledby="überschriftZwei">
+                  <div class="panel-body">
+                      <div id="viewAppWP"></div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="überschriftDrei">
+                  <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseDrei" aria-expanded="false" aria-controls="collapse3">
+                      Datenbank Release Notes
+                      </a>
+                  </h4>
+              </div>
+              <div id="collapseDrei" class="panel-collapse collapse" role="tabpanel" aria-labelledby="überschriftDrei">
+                  <div class="panel-body">
+                      <div id="viewDB"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+</div>
+<!-- /container -->
+
+</body>
+</html>

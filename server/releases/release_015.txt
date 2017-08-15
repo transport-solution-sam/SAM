@@ -1,0 +1,7 @@
+Server Release 0.15
+***************
+
++ user can delete their account 
++ user can change their password or username (mail address)
++ hole project updated with comments (functions and algorithm)
++ better error handling for models of mysql
