@@ -1,0 +1,1 @@
+Use Visual Studio 2015 with Windows 8.1 Universal SDK to open and deploy solution.

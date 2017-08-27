@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="SAM.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SAM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#FFBACD02">
+
+
+    <Grid x:Name="LayoutRoot">
+        
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+            
+        <StackPanel x:Name="_header" Margin="10" Grid.Row="0">
+            <TextBlock x:Name="_headerLabel" Text="SAM Login" Margin="9,0,0,0" Style="{StaticResource BaseTextBlockStyle}" FontSize="24"/>
+            <TextBlock Text="Willkommen" Style="{StaticResource HeaderTextBlockStyle}"/>       
+        </StackPanel>
+        
+        <Image x:Name="_cactus" Source="Assets/logo.png" Margin="10" Grid.Row="1"/>
+
+        <Button x:Name="_accountSettingButton" Grid.Row="2" HorizontalAlignment="Stretch" Click="_accountSettingButton_Click">Anmeldung Einrichten</Button>
+        <Button x:Name="_toConsumptionButton" Grid.Row="3" HorizontalAlignment="Stretch" Click="_toConsumptionButton_Click">Verbrauch Einrichten</Button>
+
+        <Button x:Name="_toTrackingButton" Grid.Row="4" HorizontalAlignment="Stretch" Click="_toTrackingButton_Click">Zum Tracking</Button>
+    </Grid>
+</Page>

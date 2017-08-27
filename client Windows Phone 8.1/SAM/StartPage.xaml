@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="SAM.StartPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SAM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Titelbereich -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="SAM" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="Strecke auswählen" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+        <!--TODO: Inhalte sollten innerhalb des folgenden Rasters platziert werden,-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            
+            <StackPanel>
+                <TextBox x:Name="_routeNameBox" PlaceholderText="Neuen Tag anlegen"></TextBox>
+                <ComboBox x:Name="_selectTagBox" IsEnabled="False" SelectedIndex="-1" HorizontalAlignment="Stretch" PlaceholderText="...oder Tag auswählen" SelectionChanged="_selectTagBox_SelectionChanged"></ComboBox>
+                <Button x:Name="_trackingButton" HorizontalAlignment="Stretch" Click="_trackingButton_Click"> Tracking starten</Button>
+                <Button x:Name="_compareRouteButton" HorizontalAlignment="Stretch" IsEnabled="False" Click="_compareRouteButton_Click"> Strecken vergleichen</Button>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Page>

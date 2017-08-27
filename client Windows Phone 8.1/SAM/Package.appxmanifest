@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+  <Identity Name="d234cd18-2455-4b91-b5f7-0966de89900f" Publisher="CN=Christoph" Version="0.1.0.1" />
+  <mp:PhoneIdentity PhoneProductId="d234cd18-2455-4b91-b5f7-0966de89900f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>SAM</DisplayName>
+    <PublisherDisplayName>Christoph</PublisherDisplayName>
+    <Logo>Assets\50pxtile.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="SAM.App">
+      <m3:VisualElements DisplayName="SAM" Description="SAM" Square150x150Logo="Assets\150pxtile.png" Square44x44Logo="Assets\44pxtile.png" BackgroundColor="transparent" ForegroundText="light">
+        <m3:DefaultTile Square71x71Logo="Assets\71pxtile.png" Wide310x150Logo="Assets\310pxbig_tile.png">
+          <m3:ShowNameOnTiles>
+            <m3:ShowOn Tile="square150x150Logo" />
+            <m3:ShowOn Tile="wide310x150Logo" />
+          </m3:ShowNameOnTiles>
+        </m3:DefaultTile>
+        <m3:InitialRotationPreference>
+          <m3:Rotation Preference="portrait" />
+          <m3:Rotation Preference="landscape" />
+          <m3:Rotation Preference="landscapeFlipped" />
+        </m3:InitialRotationPreference>
+      </m3:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+    <DeviceCapability Name="location" />
+    <m2:DeviceCapability Name="bluetooth.rfcomm">
+      <m2:Device Id="any">
+        <m2:Function Type="serviceId:00001101-0000-1000-8000-00805F9B34FB" />
+      </m2:Device>
+    </m2:DeviceCapability>
+  </Capabilities>
+</Package>
