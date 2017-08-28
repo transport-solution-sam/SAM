@@ -29,5 +29,5 @@ The functionality of the app was tested and proofed in a case-study using the fo
 
 ## Developer Instructions
 
-To modify, compile, deploy and run the application, Visual Studio 2015 (Community/Professional/Enterprise) and the Windows 8.1 SDK is required. Newer Versions of Visual Studio are not supported! 
+To modify, compile, deploy and run the application, Visual Studio 2015 (Community/Professional/Enterprise) and the Windows 8.1 SDK are required. Newer Versions of Visual Studio are not supported! 
 Dependencies are automatically resolved by nuget.
