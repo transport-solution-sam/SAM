@@ -1,7 +1,7 @@
 # SAM - Streckenabhängige Verbrauchsmessung und -analayse
 
 ## Finde some more Information
-[Documentation](documentation/documentationSAM2015.pdf)__
+[Documentation](documentation/documentationSAM2015.pdf)<br />
 [Demo video](documentation/demovideo.mov)
 
 ## Zusammenfassung
