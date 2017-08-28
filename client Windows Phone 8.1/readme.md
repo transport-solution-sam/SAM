@@ -27,9 +27,6 @@ The functionality of the app was tested and proofed in a case-study using the fo
 * Seat Ibiza 6J 1.6 TDI
 * Volkswagen Golf VII 2.0 TDI
 
-Its functionality was tested on a  and a  together with the following cars:
-
-
 ## Developer Instructions
 
 To modify, compile, deploy and run the application, Visual Studio 2015 (Community/Professional/Enterprise) and the Windows 8.1 SDK is required. Newer Versions of Visual Studio are not supported! 
