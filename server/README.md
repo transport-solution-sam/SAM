@@ -42,7 +42,7 @@ Your data could look like the following (lat – latitude, lon – longitude, t 
 {"lat":49.50219,"lon":8.48804,"t":1432317153.6601915,"fuel":1.4279716666666666,"d":6.71}]}
 ```
 
-<br/>In order to get everything up and running, you have to adjust Overpass, Gisgraphy, Neo4j and mySQL. You need to change the following:  
+<br/>In order to get everything up and running, you have to adjust Overpass, Gisgraphy, Neo4j and MySQL. You need to change the following:  
 #### Neo4J in dbData/db.js
 ```javascript
 var db_test = require("seraph")({
