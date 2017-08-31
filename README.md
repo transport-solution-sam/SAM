@@ -8,7 +8,7 @@
 
 
 ## 1. About us and the project
-Our student project "Streckenabhängige Verbrauchsmessung und -analayse (SAM)" is based on the idea of Rico Fritzsche and was implemented together with Christoph Prinz and Simon Sander. We implemented the project from the idea to the prototype as part of an independent student research project at the Baden-Wuerttemberg Cooperative State University (DHBW).
+Our student project "Streckenabhängige Verbrauchsmessung und -analayse" (SAM) is based on the idea of Rico Fritzsche and was implemented together with Christoph Prinz and Simon Sander. We implemented the project from the idea to the prototype as part of an independent student research project at the Baden-Wuerttemberg Cooperative State University (DHBW).
 Due to a lack of time, we decided to publish the project for everyone under a GPL-3.0 license, so that everyone can continue working on the idea or project.
 It is free to ask for more information or help.
 
