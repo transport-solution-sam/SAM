@@ -26,7 +26,7 @@ The backend was developed with WebStorm, therefor you can use the integrated RES
 4. Adapt paths in *config.json*
 5. Install and adapt SQL data base (e.g. *source <path>/database/schema.sql*).
 6. Start server with command *node server.js* or use WebStorm.
-7. The server works if you get after calling http://localhost:8080/get/ the message `{"error":10,"note":"User isn't logged in."}`.
+7. The server works if you get after calling http://localhost:8080/serverversion/ the message with the current server version.
 8. Use a REST client to send a POST request to http://localhost:8080/signup/ - add the content value header *application/x-www-form-urlencoded* and include to the body your sign up data in the following form: *username=XXX&password=XXX*
 9. Now, the user can send JSON trip data to the server (you could use test data and send it as POST method without any content value header to http://localhost:8080/v02/send_data.json)
 
