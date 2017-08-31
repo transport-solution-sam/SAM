@@ -1,0 +1,26 @@
+{
+  "ports": {
+    "http": 8080,
+    "https": 443
+  },
+  "logging": {
+    "path": "/Users/XXXXXX/server/util/log4js_configuration.json",
+    "enable": 1
+  },
+  "data_logging": {
+    "path": "/Users/XXXXXX/logs/",
+    "server_release": "/Users/XXXXXX/server/releases/server/",
+    "appwp_release": "/Users/XXXXXX/server/releases/appWP/",
+    "file_path": "/Users/XXXXXX/server"
+  },
+  "paths":{
+    "redirect_downloads": "/downloads/"
+  },
+  "testing":{
+    "isTest": true
+  },
+  "environment":{
+    "isTest": true,
+    "isLocal": true
+  }
+}
