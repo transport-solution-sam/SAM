@@ -18,6 +18,7 @@ Get a first impression with the [demo video](documentation/demovideo.mov). <br/>
 Learn more about the idea and the project in the [documentation](documentation/documentationSAM2015.pdf) (in German only). <br/>
 Start the Windows Phone 8.1 [client](client/readme.md). <br/>
 Get an overview over the [server](server/README.md) implementation. <br/>
+Learn more about the [SAM API](documentation/SAM-API.xlsx) (in German only).
 
 
 ## 3. Abstract
