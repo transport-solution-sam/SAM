@@ -2,7 +2,7 @@
 
 We use Node.js for the backend to integrate the web server and the backend functionality.
 ## Features
-You will find all interfaces that provide the corresponding functions for the client, which are (HTTP POST methods unless otherwise indicated): 
+You will find all interfaces that provide the corresponding functions for the client - compare to the [SAM API](../documentation/SAM-API.xlsx)(in German only), which are HTTP POST methods unless otherwise indicated: 
 
 * Get the current server version (HTTP GET method)
 * Receive recorded trips from the client
