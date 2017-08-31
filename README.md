@@ -1,10 +1,10 @@
 # SAM - Streckenabhängige Verbrauchsmessung und -analayse
 
 ## Content
-1. About us and the project
-2. Get started
-3. Abstract
-4. Zusammenfassung
+1. [About us and the project](https://github.com/transport-solution-sam/SAM/blob/master/README.md#1-about-us-and-the-project)
+2. [Get started](https://github.com/transport-solution-sam/SAM/blob/master/README.md#2-get-started)
+3. [Abstract](https://github.com/transport-solution-sam/SAM/blob/master/README.md#3-abstract)
+4. [Zusammenfassung](https://github.com/transport-solution-sam/SAM/blob/master/README.md#4-zusammenfassung)
 
 
 ## 1. About us and the project
@@ -17,7 +17,7 @@ It is free to ask for more information or help.
 Get a first impression with the [demo video](documentation/demovideo.mov). <br/>
 Learn more about the idea and the project in the [documentation](documentation/documentationSAM2015.pdf) (in German only). <br/>
 Start the Windows Phone 8.1 [client](client/readme.md). <br/>
-Get an overview over the [server](server/readme.md) implementation. <br/>
+Get an overview over the [server](server/README.md) implementation. <br/>
 
 
 ## 3. Abstract
